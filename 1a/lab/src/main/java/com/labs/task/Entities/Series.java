@@ -64,6 +64,7 @@ public class Series {
         this.books = books;
     }
 
+    /// Метод для додавання книги до серії
     public void addBook(Book theBook){
 
         if (books == null){
@@ -72,6 +73,7 @@ public class Series {
         books.add(theBook);
     }
 
+    /// Вивід у строку
     @Override
     public String toString() {
         return "Series{" +

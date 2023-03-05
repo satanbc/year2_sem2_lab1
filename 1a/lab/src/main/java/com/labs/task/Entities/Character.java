@@ -67,6 +67,7 @@ public class Character {
         this.id = id;
     }
 
+    /// Вивід у строку
     @Override
     public String toString() {
         return "Character{" +

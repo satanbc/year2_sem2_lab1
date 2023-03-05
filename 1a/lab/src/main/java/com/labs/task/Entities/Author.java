@@ -62,6 +62,7 @@ public class Author {
         this.books = books;
     }
 
+    /// Вивід у строку
     @Override
     public String toString() {
         return "Author{" +
@@ -70,6 +71,7 @@ public class Author {
                 '}';
     }
 
+    /// Метод для додавання серії до автора
     public void addSeries(Series theSeries){
 
         if (series == null){
@@ -78,6 +80,7 @@ public class Author {
         series.add(theSeries);
     }
 
+    /// Метод для додавання книги до автора
     public void addBook(Book theBook){
 
         if (books == null){

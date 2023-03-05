@@ -129,6 +129,7 @@ public class Book {
         this.rating = rating;
     }
 
+    /// Метод для додавання персонажа до книги
     public void addCharacter(Character theCharacter){
 
         if (characters == null){
@@ -137,6 +138,7 @@ public class Book {
         characters.add(theCharacter);
     }
 
+    /// Вивід у строку
     @Override
     public String toString() {
         return "Book{" +
