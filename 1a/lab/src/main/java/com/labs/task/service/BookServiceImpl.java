@@ -51,7 +51,7 @@ public class BookServiceImpl implements BookService {
 
 	@Override
 	public List<Book> getByKeyword(String keyword){
-		return bookRepository.findByKeyword(keyword);
+		return bookRepository.getByKeyword(keyword);
 	}
 }
 

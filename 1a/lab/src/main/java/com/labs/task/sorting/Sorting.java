@@ -28,6 +28,7 @@ public class Sorting {
 
     public void insertionSort(Book[] array)
     {
+
         int n = array.length;
         for (int i = 1; i < n; ++i) {
             Book key = array[i];

@@ -12,7 +12,7 @@ import java.util.List;
 public interface BookRepository extends JpaRepository<Book, Integer> {
 
     @Query(value = "select * from Book book where book.name like %:keyword%", nativeQuery = true)
-    List<Book> findByKeyword(@Param("keyword") String keyword);
+    List<Book> getByKeyword(@Param("keyword") String keyword);
 }
 
 
