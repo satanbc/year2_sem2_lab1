@@ -4,6 +4,7 @@ import com.labs.task.Entities.Author;
 
 import java.util.List;
 
+/// Сервіс авторів
 public interface AuthorService {
 
 	public List<Author> findAll();

@@ -4,6 +4,7 @@ import com.labs.task.Entities.Series;
 
 import java.util.List;
 
+/// Сервіс серій
 public interface SeriesService {
 
 	public List<Series> findAll();

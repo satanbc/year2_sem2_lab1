@@ -4,6 +4,7 @@ import javax.persistence.*;
 import java.util.ArrayList;
 import java.util.List;
 
+/// Клас авторів
 @Entity
 @Table(name = "author")
 public class Author {

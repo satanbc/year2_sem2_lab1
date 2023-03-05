@@ -8,6 +8,7 @@ import org.springframework.stereotype.Service;
 import java.util.List;
 import java.util.Optional;
 
+/// Реалізація Сервісу авторів
 @Service
 public class AuthorServiceImpl implements AuthorService {
 

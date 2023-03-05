@@ -3,6 +3,7 @@ package com.labs.task.Entities;
 import javax.persistence.*;
 import java.util.List;
 
+/// Клас персонажів
 @Entity
 @Table(name = "\"character\"")
 public class Character {

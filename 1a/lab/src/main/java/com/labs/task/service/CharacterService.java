@@ -4,6 +4,7 @@ import com.labs.task.Entities.Character;
 
 import java.util.List;
 
+/// Сервіс персонажів
 public interface CharacterService {
 
 	public List<Character> findAll();

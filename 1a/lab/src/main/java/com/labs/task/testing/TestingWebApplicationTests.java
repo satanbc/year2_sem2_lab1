@@ -17,6 +17,7 @@ import java.util.Optional;
 
 import static org.mockito.Mockito.doReturn;
 
+/// Клас з тестами
 @SpringBootTest
 public class TestingWebApplicationTests {
 

@@ -8,6 +8,7 @@ import org.springframework.stereotype.Service;
 import java.util.List;
 import java.util.Optional;
 
+/// Реалізація Сервісу персонажів
 @Service
 public class CharacterServiceImpl implements CharacterService {
 

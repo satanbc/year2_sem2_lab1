@@ -4,6 +4,7 @@ import javax.persistence.*;
 import java.util.ArrayList;
 import java.util.List;
 
+/// Клас серій
 @Entity
 @Table(name = "series")
 public class Series {

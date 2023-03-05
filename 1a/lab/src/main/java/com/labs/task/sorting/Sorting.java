@@ -4,6 +4,7 @@ import com.labs.task.Entities.Book;
 
 import java.util.Arrays;
 
+/// Клас з алгоритмами сортування
 public class Sorting {
     Book[] array;
 
@@ -26,9 +27,7 @@ public class Sorting {
         }
     }
 
-    public void insertionSort(Book[] array)
-    {
-
+    public void insertionSort(Book[] array) {
         int n = array.length;
         for (int i = 1; i < n; ++i) {
             Book key = array[i];
@@ -170,7 +169,4 @@ public class Sorting {
         invertUsingFor(array);
         System.out.println(Arrays.toString(array));
     }
-
-
-
 }

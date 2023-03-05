@@ -8,6 +8,7 @@ import org.springframework.stereotype.Repository;
 
 import java.util.List;
 
+/// Репозиторій книжок
 @Repository
 public interface BookRepository extends JpaRepository<Book, Integer> {
 

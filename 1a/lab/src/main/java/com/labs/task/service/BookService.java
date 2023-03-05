@@ -4,6 +4,7 @@ import java.util.List;
 
 import com.labs.task.Entities.Book;
 
+/// Сервіс книжок
 public interface BookService {
 
 	public List<Book> findAll();

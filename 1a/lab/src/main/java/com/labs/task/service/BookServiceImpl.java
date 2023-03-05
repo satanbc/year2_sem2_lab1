@@ -8,6 +8,7 @@ import com.labs.task.dao.BookRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+/// Реалізація Сервісу книжок
 @Service
 public class BookServiceImpl implements BookService {
 
