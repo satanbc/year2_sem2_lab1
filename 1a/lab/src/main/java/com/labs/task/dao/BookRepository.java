@@ -12,6 +12,7 @@ import java.util.List;
 @Repository
 public interface BookRepository extends JpaRepository<Book, Integer> {
 
+    /// Метод пошуку за кодовим словом
     @Query(value = "select * from Book book where book.name like %:keyword%", nativeQuery = true)
     List<Book> getByKeyword(@Param("keyword") String keyword);
 }

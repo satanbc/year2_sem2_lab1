@@ -12,13 +12,14 @@ public class Sorting {
         this.array = array;
     }
 
-
+    /// Метод для заміни місцями двох елементів масиву
     public void swap(Book[] array, int ind1, int ind2) {
         Book tmp = array[ind1];
         array[ind1] = array[ind2];
         array[ind2] = tmp;
     }
 
+    /// Метод для інверсії масиву
     static void invertUsingFor(Book[] array) {
         for (int i = 0; i < array.length / 2; i++) {
             Book temp = array[i];
@@ -27,6 +28,7 @@ public class Sorting {
         }
     }
 
+    /// Метод сортування вставкою
     public void insertionSort(Book[] array) {
         int n = array.length;
         for (int i = 1; i < n; ++i) {
@@ -42,6 +44,7 @@ public class Sorting {
         invertUsingFor(array);
     }
 
+    /// Метод швидкого сортування
     public void quickSort(Book[] array, int leftBorder, int rightBorder) {
         int leftMarker = leftBorder;
         int rightMarker = rightBorder;
@@ -77,6 +80,7 @@ public class Sorting {
         }
     }
 
+    /// Метод сортування злиттям
     public void mergeSort(Book[] array, int n) {
         if (n < 2) {
             return;
@@ -97,6 +101,7 @@ public class Sorting {
         merge(array, l, r, mid, n - mid);
     }
 
+    /// Метод злиття
     public void merge(Book[] a, Book[] l, Book[] r, int left, int right) {
 
         int i = 0, j = 0, k = 0;
@@ -117,6 +122,7 @@ public class Sorting {
         invertUsingFor(array);
     }
 
+    /// Метод сортування вибором
     public void selectionSort(Book[] array){
         System.out.println(Arrays.toString(array));
         for (int left = 0; left < array.length; left++) {
@@ -132,6 +138,7 @@ public class Sorting {
         System.out.println(Arrays.toString(array));
     }
 
+    /// Метод сортування змішуванням
     public void shuttleSort(Book[] array){
         System.out.println(Arrays.toString(array));
         for (int i = 1; i < array.length; i++) {
@@ -150,6 +157,7 @@ public class Sorting {
         System.out.println(Arrays.toString(array));
     }
 
+    /// Метод сортування Шелла
     public void shellSort(Book[] array){
         System.out.println(Arrays.toString(array));
         int gap = array.length / 2;

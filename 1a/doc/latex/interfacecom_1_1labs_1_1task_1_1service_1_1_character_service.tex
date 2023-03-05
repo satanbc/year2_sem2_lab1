@@ -14,23 +14,78 @@ Inheritance diagram for com.\+labs.\+task.\+service.\+Character\+Service\+:\begi
 \doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{interfacecom_1_1labs_1_1task_1_1service_1_1_character_service_ae08367b80500aee5246fd09424caf11a}\label{interfacecom_1_1labs_1_1task_1_1service_1_1_character_service_ae08367b80500aee5246fd09424caf11a}} 
-List$<$ \mbox{\hyperlink{classcom_1_1labs_1_1task_1_1_entities_1_1_character}{Character}} $>$ {\bfseries find\+All} ()
-\item 
-\mbox{\Hypertarget{interfacecom_1_1labs_1_1task_1_1service_1_1_character_service_a816532278d24c8b7f6cbbcf41ff64232}\label{interfacecom_1_1labs_1_1task_1_1service_1_1_character_service_a816532278d24c8b7f6cbbcf41ff64232}} 
-\mbox{\hyperlink{classcom_1_1labs_1_1task_1_1_entities_1_1_character}{Character}} {\bfseries find\+By\+Id} (int the\+Id)
-\item 
-\mbox{\Hypertarget{interfacecom_1_1labs_1_1task_1_1service_1_1_character_service_a771c6762d7c4eff6ef49412579be40ba}\label{interfacecom_1_1labs_1_1task_1_1service_1_1_character_service_a771c6762d7c4eff6ef49412579be40ba}} 
-void {\bfseries save} (\mbox{\hyperlink{classcom_1_1labs_1_1task_1_1_entities_1_1_character}{Character}} the\+Character)
-\item 
-\mbox{\Hypertarget{interfacecom_1_1labs_1_1task_1_1service_1_1_character_service_a61112865aeba324e49ab5954c4eeaadb}\label{interfacecom_1_1labs_1_1task_1_1service_1_1_character_service_a61112865aeba324e49ab5954c4eeaadb}} 
-void {\bfseries delete\+By\+Id} (int the\+Id)
-\end{DoxyCompactItemize}
+List$<$ \mbox{\hyperlink{classcom_1_1labs_1_1task_1_1_entities_1_1_character}{Character}} $>$ \mbox{\hyperlink{interfacecom_1_1labs_1_1task_1_1service_1_1_character_service_ae08367b80500aee5246fd09424caf11a}{find\+All}} ()
+\begin{DoxyCompactList}\small\item\em Метод для отримання всіх персонажів \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classcom_1_1labs_1_1task_1_1_entities_1_1_character}{Character}} \mbox{\hyperlink{interfacecom_1_1labs_1_1task_1_1service_1_1_character_service_a816532278d24c8b7f6cbbcf41ff64232}{find\+By\+Id}} (int the\+Id)
+\begin{DoxyCompactList}\small\item\em Метод для пошуку за Id. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{interfacecom_1_1labs_1_1task_1_1service_1_1_character_service_a771c6762d7c4eff6ef49412579be40ba}{save}} (\mbox{\hyperlink{classcom_1_1labs_1_1task_1_1_entities_1_1_character}{Character}} the\+Character)
+\begin{DoxyCompactList}\small\item\em Метод для збереження \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{interfacecom_1_1labs_1_1task_1_1service_1_1_character_service_a61112865aeba324e49ab5954c4eeaadb}{delete\+By\+Id}} (int the\+Id)
+\begin{DoxyCompactList}\small\item\em Метод для видалення за Id. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \doxysubsection{Detailed Description}
 Сервіс персонажів 
 
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{interfacecom_1_1labs_1_1task_1_1service_1_1_character_service_a61112865aeba324e49ab5954c4eeaadb}\label{interfacecom_1_1labs_1_1task_1_1service_1_1_character_service_a61112865aeba324e49ab5954c4eeaadb}} 
+\index{com.labs.task.service.CharacterService@{com.labs.task.service.CharacterService}!deleteById@{deleteById}}
+\index{deleteById@{deleteById}!com.labs.task.service.CharacterService@{com.labs.task.service.CharacterService}}
+\doxysubsubsection{\texorpdfstring{deleteById()}{deleteById()}}
+{\footnotesize\ttfamily void com.\+labs.\+task.\+service.\+Character\+Service.\+delete\+By\+Id (\begin{DoxyParamCaption}\item[{int}]{the\+Id }\end{DoxyParamCaption})}
+
+
+
+Метод для видалення за Id. 
+
+
+
+Implemented in \mbox{\hyperlink{classcom_1_1labs_1_1task_1_1service_1_1_character_service_impl_ab147463d9a20dd5c3542b9c685aa2b7b}{com.\+labs.\+task.\+service.\+Character\+Service\+Impl}}.
+
+\mbox{\Hypertarget{interfacecom_1_1labs_1_1task_1_1service_1_1_character_service_ae08367b80500aee5246fd09424caf11a}\label{interfacecom_1_1labs_1_1task_1_1service_1_1_character_service_ae08367b80500aee5246fd09424caf11a}} 
+\index{com.labs.task.service.CharacterService@{com.labs.task.service.CharacterService}!findAll@{findAll}}
+\index{findAll@{findAll}!com.labs.task.service.CharacterService@{com.labs.task.service.CharacterService}}
+\doxysubsubsection{\texorpdfstring{findAll()}{findAll()}}
+{\footnotesize\ttfamily List$<$ \mbox{\hyperlink{classcom_1_1labs_1_1task_1_1_entities_1_1_character}{Character}} $>$ com.\+labs.\+task.\+service.\+Character\+Service.\+find\+All (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Метод для отримання всіх персонажів 
+
+
+
+Implemented in \mbox{\hyperlink{classcom_1_1labs_1_1task_1_1service_1_1_character_service_impl_a0a24cd9ed53974e05d55282f8095ef37}{com.\+labs.\+task.\+service.\+Character\+Service\+Impl}}.
+
+\mbox{\Hypertarget{interfacecom_1_1labs_1_1task_1_1service_1_1_character_service_a816532278d24c8b7f6cbbcf41ff64232}\label{interfacecom_1_1labs_1_1task_1_1service_1_1_character_service_a816532278d24c8b7f6cbbcf41ff64232}} 
+\index{com.labs.task.service.CharacterService@{com.labs.task.service.CharacterService}!findById@{findById}}
+\index{findById@{findById}!com.labs.task.service.CharacterService@{com.labs.task.service.CharacterService}}
+\doxysubsubsection{\texorpdfstring{findById()}{findById()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classcom_1_1labs_1_1task_1_1_entities_1_1_character}{Character}} com.\+labs.\+task.\+service.\+Character\+Service.\+find\+By\+Id (\begin{DoxyParamCaption}\item[{int}]{the\+Id }\end{DoxyParamCaption})}
+
+
+
+Метод для пошуку за Id. 
+
+
+
+Implemented in \mbox{\hyperlink{classcom_1_1labs_1_1task_1_1service_1_1_character_service_impl_ac28a5cb8096ab21e7df6c773a1a93d93}{com.\+labs.\+task.\+service.\+Character\+Service\+Impl}}.
+
+\mbox{\Hypertarget{interfacecom_1_1labs_1_1task_1_1service_1_1_character_service_a771c6762d7c4eff6ef49412579be40ba}\label{interfacecom_1_1labs_1_1task_1_1service_1_1_character_service_a771c6762d7c4eff6ef49412579be40ba}} 
+\index{com.labs.task.service.CharacterService@{com.labs.task.service.CharacterService}!save@{save}}
+\index{save@{save}!com.labs.task.service.CharacterService@{com.labs.task.service.CharacterService}}
+\doxysubsubsection{\texorpdfstring{save()}{save()}}
+{\footnotesize\ttfamily void com.\+labs.\+task.\+service.\+Character\+Service.\+save (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classcom_1_1labs_1_1task_1_1_entities_1_1_character}{Character}}}]{the\+Character }\end{DoxyParamCaption})}
+
+
+
+Метод для збереження 
+
+
+
+Implemented in \mbox{\hyperlink{classcom_1_1labs_1_1task_1_1service_1_1_character_service_impl_abdb935d6f6240b06533468c40b2213be}{com.\+labs.\+task.\+service.\+Character\+Service\+Impl}}.
+
+
+
 The documentation for this interface was generated from the following file\+:\begin{DoxyCompactItemize}
 \item 
-lab/src/main/java/com/labs/task/service/Character\+Service.\+java\end{DoxyCompactItemize}
+D\+:/\+Java/year2\+\_\+sem2\+\_\+lab1/1a/lab/src/main/java/com/labs/task/service/Character\+Service.\+java\end{DoxyCompactItemize}

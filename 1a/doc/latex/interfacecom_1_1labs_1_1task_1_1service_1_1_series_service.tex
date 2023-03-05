@@ -14,23 +14,78 @@ Inheritance diagram for com.\+labs.\+task.\+service.\+Series\+Service\+:\begin{f
 \doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{interfacecom_1_1labs_1_1task_1_1service_1_1_series_service_add8b04332f5d167721b5d60ebfed7624}\label{interfacecom_1_1labs_1_1task_1_1service_1_1_series_service_add8b04332f5d167721b5d60ebfed7624}} 
-List$<$ \mbox{\hyperlink{classcom_1_1labs_1_1task_1_1_entities_1_1_series}{Series}} $>$ {\bfseries find\+All} ()
-\item 
-\mbox{\Hypertarget{interfacecom_1_1labs_1_1task_1_1service_1_1_series_service_a292b5176f4d4d1e58538e36afafcc700}\label{interfacecom_1_1labs_1_1task_1_1service_1_1_series_service_a292b5176f4d4d1e58538e36afafcc700}} 
-\mbox{\hyperlink{classcom_1_1labs_1_1task_1_1_entities_1_1_series}{Series}} {\bfseries find\+By\+Id} (int the\+Id)
-\item 
-\mbox{\Hypertarget{interfacecom_1_1labs_1_1task_1_1service_1_1_series_service_a9cf213b9f7e308d20be8dc39ac1cdffa}\label{interfacecom_1_1labs_1_1task_1_1service_1_1_series_service_a9cf213b9f7e308d20be8dc39ac1cdffa}} 
-void {\bfseries save} (\mbox{\hyperlink{classcom_1_1labs_1_1task_1_1_entities_1_1_series}{Series}} the\+Series)
-\item 
-\mbox{\Hypertarget{interfacecom_1_1labs_1_1task_1_1service_1_1_series_service_a688e1da63cf0e1ffc75d9cf453ef8697}\label{interfacecom_1_1labs_1_1task_1_1service_1_1_series_service_a688e1da63cf0e1ffc75d9cf453ef8697}} 
-void {\bfseries delete\+By\+Id} (int the\+Id)
-\end{DoxyCompactItemize}
+List$<$ \mbox{\hyperlink{classcom_1_1labs_1_1task_1_1_entities_1_1_series}{Series}} $>$ \mbox{\hyperlink{interfacecom_1_1labs_1_1task_1_1service_1_1_series_service_add8b04332f5d167721b5d60ebfed7624}{find\+All}} ()
+\begin{DoxyCompactList}\small\item\em Метод для отримання всіх серій \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classcom_1_1labs_1_1task_1_1_entities_1_1_series}{Series}} \mbox{\hyperlink{interfacecom_1_1labs_1_1task_1_1service_1_1_series_service_a292b5176f4d4d1e58538e36afafcc700}{find\+By\+Id}} (int the\+Id)
+\begin{DoxyCompactList}\small\item\em Метод для пошуку за Id. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{interfacecom_1_1labs_1_1task_1_1service_1_1_series_service_a9cf213b9f7e308d20be8dc39ac1cdffa}{save}} (\mbox{\hyperlink{classcom_1_1labs_1_1task_1_1_entities_1_1_series}{Series}} the\+Series)
+\begin{DoxyCompactList}\small\item\em Метод для збереження \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{interfacecom_1_1labs_1_1task_1_1service_1_1_series_service_a688e1da63cf0e1ffc75d9cf453ef8697}{delete\+By\+Id}} (int the\+Id)
+\begin{DoxyCompactList}\small\item\em Метод для видалення за Id. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \doxysubsection{Detailed Description}
 Сервіс серій 
 
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{interfacecom_1_1labs_1_1task_1_1service_1_1_series_service_a688e1da63cf0e1ffc75d9cf453ef8697}\label{interfacecom_1_1labs_1_1task_1_1service_1_1_series_service_a688e1da63cf0e1ffc75d9cf453ef8697}} 
+\index{com.labs.task.service.SeriesService@{com.labs.task.service.SeriesService}!deleteById@{deleteById}}
+\index{deleteById@{deleteById}!com.labs.task.service.SeriesService@{com.labs.task.service.SeriesService}}
+\doxysubsubsection{\texorpdfstring{deleteById()}{deleteById()}}
+{\footnotesize\ttfamily void com.\+labs.\+task.\+service.\+Series\+Service.\+delete\+By\+Id (\begin{DoxyParamCaption}\item[{int}]{the\+Id }\end{DoxyParamCaption})}
+
+
+
+Метод для видалення за Id. 
+
+
+
+Implemented in \mbox{\hyperlink{classcom_1_1labs_1_1task_1_1service_1_1_series_service_impl_a7091557530ebe50a562129c93d7a291a}{com.\+labs.\+task.\+service.\+Series\+Service\+Impl}}.
+
+\mbox{\Hypertarget{interfacecom_1_1labs_1_1task_1_1service_1_1_series_service_add8b04332f5d167721b5d60ebfed7624}\label{interfacecom_1_1labs_1_1task_1_1service_1_1_series_service_add8b04332f5d167721b5d60ebfed7624}} 
+\index{com.labs.task.service.SeriesService@{com.labs.task.service.SeriesService}!findAll@{findAll}}
+\index{findAll@{findAll}!com.labs.task.service.SeriesService@{com.labs.task.service.SeriesService}}
+\doxysubsubsection{\texorpdfstring{findAll()}{findAll()}}
+{\footnotesize\ttfamily List$<$ \mbox{\hyperlink{classcom_1_1labs_1_1task_1_1_entities_1_1_series}{Series}} $>$ com.\+labs.\+task.\+service.\+Series\+Service.\+find\+All (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Метод для отримання всіх серій 
+
+
+
+Implemented in \mbox{\hyperlink{classcom_1_1labs_1_1task_1_1service_1_1_series_service_impl_a8d86e0f29e4faee997fa108e37965fa7}{com.\+labs.\+task.\+service.\+Series\+Service\+Impl}}.
+
+\mbox{\Hypertarget{interfacecom_1_1labs_1_1task_1_1service_1_1_series_service_a292b5176f4d4d1e58538e36afafcc700}\label{interfacecom_1_1labs_1_1task_1_1service_1_1_series_service_a292b5176f4d4d1e58538e36afafcc700}} 
+\index{com.labs.task.service.SeriesService@{com.labs.task.service.SeriesService}!findById@{findById}}
+\index{findById@{findById}!com.labs.task.service.SeriesService@{com.labs.task.service.SeriesService}}
+\doxysubsubsection{\texorpdfstring{findById()}{findById()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classcom_1_1labs_1_1task_1_1_entities_1_1_series}{Series}} com.\+labs.\+task.\+service.\+Series\+Service.\+find\+By\+Id (\begin{DoxyParamCaption}\item[{int}]{the\+Id }\end{DoxyParamCaption})}
+
+
+
+Метод для пошуку за Id. 
+
+
+
+Implemented in \mbox{\hyperlink{classcom_1_1labs_1_1task_1_1service_1_1_series_service_impl_a889c2484f67e2cae456ce5bb26311514}{com.\+labs.\+task.\+service.\+Series\+Service\+Impl}}.
+
+\mbox{\Hypertarget{interfacecom_1_1labs_1_1task_1_1service_1_1_series_service_a9cf213b9f7e308d20be8dc39ac1cdffa}\label{interfacecom_1_1labs_1_1task_1_1service_1_1_series_service_a9cf213b9f7e308d20be8dc39ac1cdffa}} 
+\index{com.labs.task.service.SeriesService@{com.labs.task.service.SeriesService}!save@{save}}
+\index{save@{save}!com.labs.task.service.SeriesService@{com.labs.task.service.SeriesService}}
+\doxysubsubsection{\texorpdfstring{save()}{save()}}
+{\footnotesize\ttfamily void com.\+labs.\+task.\+service.\+Series\+Service.\+save (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classcom_1_1labs_1_1task_1_1_entities_1_1_series}{Series}}}]{the\+Series }\end{DoxyParamCaption})}
+
+
+
+Метод для збереження 
+
+
+
+Implemented in \mbox{\hyperlink{classcom_1_1labs_1_1task_1_1service_1_1_series_service_impl_a75a33cc950c3bba7c0db55b5e30069b3}{com.\+labs.\+task.\+service.\+Series\+Service\+Impl}}.
+
+
+
 The documentation for this interface was generated from the following file\+:\begin{DoxyCompactItemize}
 \item 
-lab/src/main/java/com/labs/task/service/Series\+Service.\+java\end{DoxyCompactItemize}
+D\+:/\+Java/year2\+\_\+sem2\+\_\+lab1/1a/lab/src/main/java/com/labs/task/service/Series\+Service.\+java\end{DoxyCompactItemize}

@@ -19,6 +19,7 @@ public class SortingController {
 		bookService = theBookService;
 	}
 
+	/// Метод сортування вставкою
 	@GetMapping("/insertionSort")
 	public String insertionSort(Model theModel){
 
@@ -38,6 +39,7 @@ public class SortingController {
 		return "books/list-books-sorted";
 	}
 
+	/// Метод швидкого сортування
 	@GetMapping("/quickSort")
 	public String quickSort(Model theModel){
 
@@ -61,6 +63,7 @@ public class SortingController {
 		return "books/list-books-sorted";
 	}
 
+	/// Метод сортування злиттям
 	@GetMapping("/mergeSort")
 	public String mergeSort(Model theModel){
 
@@ -80,6 +83,7 @@ public class SortingController {
 		return "books/list-books-sorted";
 	}
 
+	/// Метод сортування вибором
 	@GetMapping("/selectionSort")
 	public String selectionSort(Model theModel){
 
@@ -99,6 +103,7 @@ public class SortingController {
 		return "books/list-books-sorted";
 	}
 
+	/// Метод сортування змішуванням
 	@GetMapping("/shuttleSort")
 	public String shuttleSort(Model theModel){
 
@@ -118,6 +123,7 @@ public class SortingController {
 		return "books/list-books-sorted";
 	}
 
+	/// Метод сортування Шелла
 	@GetMapping("/shellSort")
 	public String shellSort(Model theModel){
 

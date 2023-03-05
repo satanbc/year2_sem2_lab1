@@ -21,21 +21,13 @@ import static org.mockito.Mockito.doReturn;
 @SpringBootTest
 public class TestingWebApplicationTests {
 
-    /**
-     * Autowire in the service we want to test
-     */
     @Autowired
     private BookService service;
 
-    /**
-     * Create a mock implementation of the WidgetRepository
-     */
     @MockBean
     private BookRepository repository;
 
-    @MockBean
-    private BookController controller;
-
+    /// Тестування пошуку за Id
     @Test
     @DisplayName("Test findById Success")
     void testFindById() {
@@ -48,6 +40,7 @@ public class TestingWebApplicationTests {
         Assertions.assertSame(returnedWidget.get(), book, "The book returned was not the same as the mock");
     }
 
+    /// Тестування невдалого пошуку за Id
     @Test
     @DisplayName("Test findById Not Found")
     void testFindByIdNotFound() throws RuntimeException{
@@ -62,6 +55,7 @@ public class TestingWebApplicationTests {
         }
     }
 
+    /// Тестування пошуку всіх книжок
     @Test
     @DisplayName("Test findAll")
     void testFindAll() {

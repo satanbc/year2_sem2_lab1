@@ -31,7 +31,7 @@ public class BookController {
 	private SeriesService seriesService;
 	private AuthorService authorService;
 	private CharacterService characterService;
-	
+
 	public BookController(BookService theBookService, SeriesService seriesService, AuthorService authorService, CharacterService characterService) {
 		bookService = theBookService;
 		this.seriesService = seriesService;
@@ -39,6 +39,7 @@ public class BookController {
 		this.characterService = characterService;
 	}
 
+	/// Метод для виводу списку
 	@GetMapping("/list")
 	public String listBooks(Model theModel){
 
@@ -49,6 +50,7 @@ public class BookController {
 		return "books/list-books";
 	}
 
+	/// Метод для виводу форми додавання
 	@GetMapping("/showFormForAdd")
 	public String showFormForAdd(Model theModel){
 
@@ -63,6 +65,7 @@ public class BookController {
 		return "books/book-form";
 	}
 
+	/// Метод для виводу форми сортування
 	@GetMapping("/showFormForSort")
 	public String showFormForSort(Model theModel){
 
@@ -73,6 +76,7 @@ public class BookController {
 		return "books/book-sort";
 	}
 
+	/// Метод для пошуку
 	@RequestMapping(path = {"/books/list","/search"})
 	public String search(Model theModel, String keyword) {
 		if(keyword!=null) {
@@ -84,6 +88,7 @@ public class BookController {
 		return "books/search-books";
 	}
 
+	/// Метод для зберігання
 	@PostMapping("/save")
 	public String saveBook(@ModelAttribute("book") Book theBook){
 
@@ -176,6 +181,7 @@ public class BookController {
 		return "redirect:/books/list";
 	}
 
+	/// Метод для видалення
 	@GetMapping("/delete")
 	public  String delete(@RequestParam("bookId") int theId){
 

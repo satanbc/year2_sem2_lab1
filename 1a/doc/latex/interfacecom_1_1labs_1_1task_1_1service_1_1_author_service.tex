@@ -14,23 +14,78 @@ Inheritance diagram for com.\+labs.\+task.\+service.\+Author\+Service\+:\begin{f
 \doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{interfacecom_1_1labs_1_1task_1_1service_1_1_author_service_a090131891e0f4a076ce733f85764db56}\label{interfacecom_1_1labs_1_1task_1_1service_1_1_author_service_a090131891e0f4a076ce733f85764db56}} 
-List$<$ \mbox{\hyperlink{classcom_1_1labs_1_1task_1_1_entities_1_1_author}{Author}} $>$ {\bfseries find\+All} ()
-\item 
-\mbox{\Hypertarget{interfacecom_1_1labs_1_1task_1_1service_1_1_author_service_a8df13c346654c575ea7547d9280e02d8}\label{interfacecom_1_1labs_1_1task_1_1service_1_1_author_service_a8df13c346654c575ea7547d9280e02d8}} 
-\mbox{\hyperlink{classcom_1_1labs_1_1task_1_1_entities_1_1_author}{Author}} {\bfseries find\+By\+Id} (int the\+Id)
-\item 
-\mbox{\Hypertarget{interfacecom_1_1labs_1_1task_1_1service_1_1_author_service_a98303d8a128dd16ad6054e19d9add538}\label{interfacecom_1_1labs_1_1task_1_1service_1_1_author_service_a98303d8a128dd16ad6054e19d9add538}} 
-void {\bfseries save} (\mbox{\hyperlink{classcom_1_1labs_1_1task_1_1_entities_1_1_author}{Author}} the\+Author)
-\item 
-\mbox{\Hypertarget{interfacecom_1_1labs_1_1task_1_1service_1_1_author_service_a2987a26e636632d1d373edda17da9a78}\label{interfacecom_1_1labs_1_1task_1_1service_1_1_author_service_a2987a26e636632d1d373edda17da9a78}} 
-void {\bfseries delete\+By\+Id} (int the\+Id)
-\end{DoxyCompactItemize}
+List$<$ \mbox{\hyperlink{classcom_1_1labs_1_1task_1_1_entities_1_1_author}{Author}} $>$ \mbox{\hyperlink{interfacecom_1_1labs_1_1task_1_1service_1_1_author_service_a090131891e0f4a076ce733f85764db56}{find\+All}} ()
+\begin{DoxyCompactList}\small\item\em Метод для отримання всіх авторів \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classcom_1_1labs_1_1task_1_1_entities_1_1_author}{Author}} \mbox{\hyperlink{interfacecom_1_1labs_1_1task_1_1service_1_1_author_service_a8df13c346654c575ea7547d9280e02d8}{find\+By\+Id}} (int the\+Id)
+\begin{DoxyCompactList}\small\item\em Метод для пошуку за Id. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{interfacecom_1_1labs_1_1task_1_1service_1_1_author_service_a98303d8a128dd16ad6054e19d9add538}{save}} (\mbox{\hyperlink{classcom_1_1labs_1_1task_1_1_entities_1_1_author}{Author}} the\+Author)
+\begin{DoxyCompactList}\small\item\em Метод для збереження \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{interfacecom_1_1labs_1_1task_1_1service_1_1_author_service_a2987a26e636632d1d373edda17da9a78}{delete\+By\+Id}} (int the\+Id)
+\begin{DoxyCompactList}\small\item\em Метод для видалення за Id. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \doxysubsection{Detailed Description}
 Сервіс авторів 
 
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{interfacecom_1_1labs_1_1task_1_1service_1_1_author_service_a2987a26e636632d1d373edda17da9a78}\label{interfacecom_1_1labs_1_1task_1_1service_1_1_author_service_a2987a26e636632d1d373edda17da9a78}} 
+\index{com.labs.task.service.AuthorService@{com.labs.task.service.AuthorService}!deleteById@{deleteById}}
+\index{deleteById@{deleteById}!com.labs.task.service.AuthorService@{com.labs.task.service.AuthorService}}
+\doxysubsubsection{\texorpdfstring{deleteById()}{deleteById()}}
+{\footnotesize\ttfamily void com.\+labs.\+task.\+service.\+Author\+Service.\+delete\+By\+Id (\begin{DoxyParamCaption}\item[{int}]{the\+Id }\end{DoxyParamCaption})}
+
+
+
+Метод для видалення за Id. 
+
+
+
+Implemented in \mbox{\hyperlink{classcom_1_1labs_1_1task_1_1service_1_1_author_service_impl_a68e5905c658fbf8182de24e5f1eb6dc4}{com.\+labs.\+task.\+service.\+Author\+Service\+Impl}}.
+
+\mbox{\Hypertarget{interfacecom_1_1labs_1_1task_1_1service_1_1_author_service_a090131891e0f4a076ce733f85764db56}\label{interfacecom_1_1labs_1_1task_1_1service_1_1_author_service_a090131891e0f4a076ce733f85764db56}} 
+\index{com.labs.task.service.AuthorService@{com.labs.task.service.AuthorService}!findAll@{findAll}}
+\index{findAll@{findAll}!com.labs.task.service.AuthorService@{com.labs.task.service.AuthorService}}
+\doxysubsubsection{\texorpdfstring{findAll()}{findAll()}}
+{\footnotesize\ttfamily List$<$ \mbox{\hyperlink{classcom_1_1labs_1_1task_1_1_entities_1_1_author}{Author}} $>$ com.\+labs.\+task.\+service.\+Author\+Service.\+find\+All (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Метод для отримання всіх авторів 
+
+
+
+Implemented in \mbox{\hyperlink{classcom_1_1labs_1_1task_1_1service_1_1_author_service_impl_a0df043bc9b8a9e5fbf724f1a91c845fe}{com.\+labs.\+task.\+service.\+Author\+Service\+Impl}}.
+
+\mbox{\Hypertarget{interfacecom_1_1labs_1_1task_1_1service_1_1_author_service_a8df13c346654c575ea7547d9280e02d8}\label{interfacecom_1_1labs_1_1task_1_1service_1_1_author_service_a8df13c346654c575ea7547d9280e02d8}} 
+\index{com.labs.task.service.AuthorService@{com.labs.task.service.AuthorService}!findById@{findById}}
+\index{findById@{findById}!com.labs.task.service.AuthorService@{com.labs.task.service.AuthorService}}
+\doxysubsubsection{\texorpdfstring{findById()}{findById()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classcom_1_1labs_1_1task_1_1_entities_1_1_author}{Author}} com.\+labs.\+task.\+service.\+Author\+Service.\+find\+By\+Id (\begin{DoxyParamCaption}\item[{int}]{the\+Id }\end{DoxyParamCaption})}
+
+
+
+Метод для пошуку за Id. 
+
+
+
+Implemented in \mbox{\hyperlink{classcom_1_1labs_1_1task_1_1service_1_1_author_service_impl_ae239250e10b9f697f8f768e9a776a073}{com.\+labs.\+task.\+service.\+Author\+Service\+Impl}}.
+
+\mbox{\Hypertarget{interfacecom_1_1labs_1_1task_1_1service_1_1_author_service_a98303d8a128dd16ad6054e19d9add538}\label{interfacecom_1_1labs_1_1task_1_1service_1_1_author_service_a98303d8a128dd16ad6054e19d9add538}} 
+\index{com.labs.task.service.AuthorService@{com.labs.task.service.AuthorService}!save@{save}}
+\index{save@{save}!com.labs.task.service.AuthorService@{com.labs.task.service.AuthorService}}
+\doxysubsubsection{\texorpdfstring{save()}{save()}}
+{\footnotesize\ttfamily void com.\+labs.\+task.\+service.\+Author\+Service.\+save (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classcom_1_1labs_1_1task_1_1_entities_1_1_author}{Author}}}]{the\+Author }\end{DoxyParamCaption})}
+
+
+
+Метод для збереження 
+
+
+
+Implemented in \mbox{\hyperlink{classcom_1_1labs_1_1task_1_1service_1_1_author_service_impl_a1acb19b72c7aa64ca5b260f72222c083}{com.\+labs.\+task.\+service.\+Author\+Service\+Impl}}.
+
+
+
 The documentation for this interface was generated from the following file\+:\begin{DoxyCompactItemize}
 \item 
-lab/src/main/java/com/labs/task/service/Author\+Service.\+java\end{DoxyCompactItemize}
+D\+:/\+Java/year2\+\_\+sem2\+\_\+lab1/1a/lab/src/main/java/com/labs/task/service/Author\+Service.\+java\end{DoxyCompactItemize}
